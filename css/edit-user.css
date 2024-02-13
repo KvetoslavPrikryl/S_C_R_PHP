@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-back{
+    margin-top: 90px;
+}
+
+.edit-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 500px;
+    background: linear-gradient(135deg, rgba(255, 255, 255,0.9), rgb(231,110,46)) ;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+@media screen and (max-width:500px){
+    .form{
+        width: 100%;
+    }
+}

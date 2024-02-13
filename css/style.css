@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: url("../img/Dog1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+h1{
+    font-size: 4rem;
+    padding: 30px 0 0 20px;
+}  
+
+h1, h2, h3{
+    color:rgba(231,110,46,255) ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+/* Admin panel*/
+
+.admin-panel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgba(78, 77, 77, 0.9);
+    position: fixed;
+    top: 0;
+}
+
+.admin-panel ul{
+    display: flex;
+}
+
+.admin-panel ul li{
+    padding: 0 20px;
+}
+
+/******* MAIN *******/
+
+main{
+    min-height: 100vh;
+}
+
+.page-description{
+    font-size: 1.7rem;
+}
+
+.page-description h2{
+    padding: 10px 40px;
+}
+
+/* Header */
+
+header{
+    top: 20%;
+    height: 100vh;
+    position: fixed;
+}
+
+header li{
+    padding-left: 20px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.hemburger-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Buttons */
+
+.btn {
+    width: 150px;
+    height: 50px;
+    background: rgba(231,110,46,255);
+    text-align: center;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    color:#291814;
+    border-radius:5px ;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 7px black;
+}
+
+.delete-btn{
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: rgb(189,31,31);
+}
+
+.fa-solid{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+}
+
+/* form */
+
+.form-title{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+form input, textarea{
+    background: rgba(231, 111, 46, 0.3);
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    text-align: left;
+    padding: 5px 30px;
+    transition: 0.3s linear;
+    width: 95%;
+}
+
+form input:focus, textarea:focus{
+    background-color: rgba(231, 111, 46, 0.85);
+}
+
+form .button{
+    width: 60%;
+    background: rgba(231, 111, 46);
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+}
+
+form .button:hover{
+    background: rgb(2, 170, 58);
+    border: 2px solid rgb(2, 170, 58);
+}
+
+::placeholder{
+    color: white;
+}
+
+/* Footer */
+
+.footer-container{
+    background: #402E32;
+    color: rgba(231,110,46,255);
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .cont-left{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem 1rem 13rem;
+}
+.footer-container .cont-right{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+}
+.phone h4{
+    margin: 20px 0;
+}
+.footer-h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.google_map{
+    width: 100%;
+    height: 250px;
+}
+.footer-copy{
+    text-align: center;
+    width: 100%;
+    background: #402E32;
+    color: white;
+    padding-bottom: 5px;
+}
+
+
+/* QUERY */
+
+@media screen and (max-width:1000px){
+
+    /* Hamburger */
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header{
+        width: 100%;
+        height: 50px;
+        top: 45px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .fa-bars{
+        right: 80px;
+    }
+
+    /* footer */
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-container .cont-left{
+        padding-left: 2rem ;
+    }
+}
+
+@media screen and (max-width:500px){
+    /* Hamburger */
+    .fa-bars{
+        right: 30px;
+    }
+
+    /* Footer */
+    .footer-container .cont-right{
+        width: 300px;
+    }
+
+    .admin-panel{
+        padding: 5px;
+    }
+}
+
+

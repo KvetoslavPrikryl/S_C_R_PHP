@@ -1,0 +1,52 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.delete-section{
+    padding: 50px;
+    width: 500px;
+    background: rgba(255, 255, 255,0.9);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-section .delete-buttons{
+    display: flex;
+}
+
+.delete-section .delete-btn{
+    margin-left: 50px;
+    background: rgb(189,31,31);
+}
+
+.delete-section .go-back{
+    display: inline-block;
+}
+
+.delete-section strong{
+    font-size: 2rem;
+}
+
+@media screen and (max-width:500px){
+    .delete-section{
+        width: 100%;
+        height: 500px;
+    }
+    .delete-section .delete-buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .delete-section .delete-btn{
+        margin-left: 0;
+    }
+    .delete-section h2{
+        text-align: center;
+    }
+}

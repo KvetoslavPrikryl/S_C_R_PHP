@@ -1,0 +1,93 @@
+.dog-header{
+    text-align: center;
+}
+
+.dog-header p{
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(78, 77, 77, 0.9);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.dogs{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    float: right;
+}
+
+.dog-article{
+    width: 500px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+
+#man-dogs, #famele-dogs, #pups{
+    display: none;
+}
+
+.dogs .dog{
+    width:100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255,0.9), rgb(231,110,46));
+    text-align: left;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 7px black;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.dogs .dog-name{
+    padding: 10px 0;
+}
+
+.dogs .dog-imgs{
+    margin: 20px 0;
+}
+
+.dogs .dog-imgs .dog-img{
+    width: 40%;
+    cursor: pointer;
+}
+
+.dog-img-active{
+    width: 100%;
+}
+
+.dogs .admin-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dogs .admin-buttons .edit-dog-btn{
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: #a17e20;
+}
+
+/* QUERY */
+@media screen and (max-width: 1000px){
+    .dogs{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dog-article{
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .dogs{
+        width:100%;
+    }
+
+    .dog-article{
+        padding-right: 0;
+        width: 100%;
+    }
+}
