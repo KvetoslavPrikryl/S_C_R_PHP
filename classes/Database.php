@@ -5,7 +5,7 @@ class Database {
     public static function connectionDB(){
         $db_host = "localhost";
         $db_user = "Admin";
-        $db_password = "Bne5FZ3vlpqBfWj5";
+        $db_password = "";
         $db_name = "scr_database";
     
         $connection = "mysql:host=" . $db_host . ";dbname=" . $db_name . ";charset=utf8";
