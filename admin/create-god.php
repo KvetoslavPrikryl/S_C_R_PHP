@@ -81,7 +81,7 @@
             <?php require "../assets/admin-panel.php"; ?>
         <?php endif; ?>
         
-        <a href="http://localhost/SweetCaramelRose/kennel.php"><button class="btn go-back">Zpátky</button></a>
+        <a href="/SweetCaramelRose/kennel.php"><button class="btn go-back">Zpátky</button></a>
         <section class="form-section">
             <article class="form-article">
                 <h2 class="form-title">Vytvořit psa</h2>

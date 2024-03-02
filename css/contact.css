@@ -48,3 +48,9 @@
 .one-error{
     background-color: rgb(197, 34, 34);
 }
+
+@media screen and (max-width:499px) {
+    .form form{
+        width: 300px;
+    }
+}

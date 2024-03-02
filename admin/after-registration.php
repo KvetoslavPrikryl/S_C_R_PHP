@@ -30,7 +30,7 @@
             // Nastavení ID uživatele
             $_SESSION["logged_in_user_id"] = $id;
 
-            Url::redirectURL("SweetCaramelRose/index.php");
+            Url::redirectURL("/SweetCaramelRose/index.php");
         } else {
             echo "Uživatele se nepodařilo přidat";
         }
